@@ -1,0 +1,49 @@
+{
+  "name": "get-clipboard-content",
+  "version": "1.0.1",
+  "description": "Returns the clipboard content of the requested type",
+  "private": false,
+  "repository": "https://github.com/milichev/get-clipboard-content",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "build:watch": "npm run clean && tsc-watch",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "clipboard",
+    "browser"
+  ],
+  "author": {
+    "name": "Vadym Milichev",
+    "email": "vadim.milichev@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@total-typescript/ts-reset": "^0.5.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.2",
+    "rimraf": "^5.0.5",
+    "tsc-watch": "^6.0.4",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "trailingComma": "all",
+    "semi": true,
+    "printWidth": 80,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "useTabs": false
+  }
+}

@@ -1,2 +1,3 @@
 # get-clipboard-content
-Returns the clipboard content of the requested type
+
+> Returns the clipboard content of the requested type
